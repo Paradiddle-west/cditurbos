@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es" suppressHydrationWarning className={`${oxanium.variable} ${roboto.variable}`}>
+    <html lang="es" suppressHydrationWarning className={`${roboto.variable}`}>
       <Head>
         <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&display=swap" rel="stylesheet"/>
       </Head>
