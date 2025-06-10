@@ -14,31 +14,25 @@ export default function BlogPage() {
       <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <Link href="/">
+            <Link href="#inicio">
               <Logo className="h-10 w-auto" />
             </Link>
           </div>
           <nav className="hidden md:flex gap-6">
-            <Link href="/#inicio" className="text-sm font-medium hover:text-[#019FD5] transition-colors">
+            <Link href="#inicio" className="text-sm font-medium hover:text-[#019FD5] transition-colors">
               Inicio
             </Link>
-            <Link href="/#servicios" className="text-sm font-medium hover:text-[#019FD5] transition-colors">
+            <Link href="#servicios" className="text-sm font-medium hover:text-[#019FD5] transition-colors">
               Servicios
             </Link>
-            <Link href="/#beneficios" className="text-sm font-medium hover:text-[#019FD5] transition-colors">
+            <Link href="#beneficios" className="text-sm font-medium hover:text-[#019FD5] transition-colors">
               Beneficios
             </Link>
-            <Link href="/#testimonios" className="text-sm font-medium hover:text-[#019FD5] transition-colors">
-              Testimonios
-            </Link>
-            <Link href="/#contacto" className="text-sm font-medium hover:text-[#019FD5] transition-colors">
+            <Link href="#contacto" className="text-sm font-medium hover:text-[#019FD5] transition-colors">
               Contacto
             </Link>
-            <Link href="/blog" className="text-sm font-medium text-[#019FD5] transition-colors">
-              Blog
-            </Link>
-            <Link href="/#mercadolibre" className="text-sm font-medium hover:text-[#019FD5] transition-colors">
-              Tienda ML
+            <Link href="#mercadolibre" className="text-sm font-medium hover:text-[#019FD5] transition-colors">
+              Tienda
             </Link>
           </nav>
           <Button className="hidden md:flex bg-[#25D366] hover:bg-[#128C7E]" asChild>
