@@ -6,7 +6,7 @@ import { Roboto } from "next/font/google"
 
 // Cargar fuente Oxanium (tipografía de marca)
 const oxanium = localFont({
-  src: "../fonts/Oxanium-Regular.woff2",
+  src: "../fonts/Oxanium-Regular.ttf",
   variable: "--font-oxanium",
   display: "swap",
 })
