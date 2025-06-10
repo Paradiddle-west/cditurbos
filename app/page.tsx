@@ -1287,23 +1287,13 @@ export default function Home() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#testimonios" className="text-sm hover:text-[#019FD5] transition-colors">
-                    Testimonios
-                  </Link>
-                </li>
-                <li>
                   <Link href="#contacto" className="text-sm hover:text-[#019FD5] transition-colors">
                     Contacto
                   </Link>
                 </li>
                 <li>
-                  <Link href="/blog" className="text-sm hover:text-[#019FD5] transition-colors">
-                    Blog
-                  </Link>
-                </li>
-                <li>
                   <Link href="#mercadolibre" className="text-sm hover:text-[#019FD5] transition-colors">
-                    Mercado Libre
+                    Tienda
                   </Link>
                 </li>
               </ul>
