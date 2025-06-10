@@ -19,20 +19,8 @@ export default function BlogPage() {
             </Link>
           </div>
           <nav className="hidden md:flex gap-6">
-            <Link href="#inicio" className="text-sm font-medium hover:text-[#019FD5] transition-colors">
+            <Link href="https://cditurbos.vercel.app/" className="text-sm font-medium hover:text-[#019FD5] transition-colors">
               Inicio
-            </Link>
-            <Link href="#servicios" className="text-sm font-medium hover:text-[#019FD5] transition-colors">
-              Servicios
-            </Link>
-            <Link href="#beneficios" className="text-sm font-medium hover:text-[#019FD5] transition-colors">
-              Beneficios
-            </Link>
-            <Link href="#contacto" className="text-sm font-medium hover:text-[#019FD5] transition-colors">
-              Contacto
-            </Link>
-            <Link href="#mercadolibre" className="text-sm font-medium hover:text-[#019FD5] transition-colors">
-              Tienda
             </Link>
           </nav>
           <Button variant="outline" size="icon" className="md:hidden">
@@ -188,7 +176,7 @@ export default function BlogPage() {
         </section>
 
         {/* Newsletter */}
-        <section className="py-12 bg-[#093C8E] text-white">
+        {/* <section className="py-12 bg-[#093C8E] text-white">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-2xl font-bold mb-4 font-oxanium">Suscríbete a nuestro boletín</h2>
@@ -206,7 +194,7 @@ export default function BlogPage() {
               </form>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
 
       {/* Footer */}
@@ -224,28 +212,8 @@ export default function BlogPage() {
               <h3 className="text-lg font-semibold mb-4 text-white font-oxanium">Enlaces Rápidos</h3>
               <ul className="space-y-2 font-roboto">
                 <li>
-                  <Link href="#inicio" className="text-sm hover:text-[#019FD5] transition-colors">
+                  <Link href="https://cditurbos.vercel.app/" className="text-sm hover:text-[#019FD5] transition-colors">
                     Inicio
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#servicios" className="text-sm hover:text-[#019FD5] transition-colors">
-                    Servicios
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#beneficios" className="text-sm hover:text-[#019FD5] transition-colors">
-                    Beneficios
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#contacto" className="text-sm hover:text-[#019FD5] transition-colors">
-                    Contacto
-                  </Link>
-                </li>
-                <li>
-                  <Link target="_blank" href="https://www.mercadolibre.com.ar/pagina/cditurbos#from=share_eshop" className="text-sm hover:text-[#019FD5] transition-colors">
-                    Tienda
                   </Link>
                 </li>
               </ul>
