@@ -610,15 +610,14 @@ export default function Home() {
                   <span className="text-xs text-gray-500">hace 3 meses</span>
                 </div>
                 <p className="text-[#03255C] mb-4 font-roboto">
-                  "Excelente atención y servicio. Muy profesionales y con precios competitivos. Repararon el turbo de mi
-                  camioneta en tiempo récord. Totalmente recomendable para cualquier problema con turbocompresores."
+                  "Se les puede comprar tranquilo desde cualquier lugar del país ¡gente sería en todos sentidos!"
                 </p>
                 <div className="flex items-center">
                   <div className="w-10 h-10 bg-[#DBF6FF] rounded-full flex items-center justify-center mr-3">
-                    <span className="font-bold text-[#019FD5]">LG</span>
+                    <span className="font-bold text-[#019FD5]">JR</span>
                   </div>
                   <div>
-                    <p className="font-semibold text-[#093C8E]">Luis Gómez</p>
+                    <p className="font-semibold text-[#093C8E]">Javier R.</p>
                     <p className="text-sm text-[#03255C]">Cliente verificado</p>
                     <p className="text-xs text-gray-500 mt-1">Reseña verificada de Google</p>
                   </div>
@@ -727,20 +726,18 @@ export default function Home() {
                       </svg>
                     </div>
                   </div>
-                  <span className="text-xs text-gray-500">hace 2 meses</span>
+                  <span className="text-xs text-gray-500">hace 7 meses</span>
                 </div>
                 <p className="text-[#03255C] mb-4 font-roboto">
-                  "Compré un conjunto central para mi taller y quedé muy conforme con la calidad. El envío fue rápido y
-                  el asesoramiento técnico excelente. Los precios son justos para la calidad que ofrecen.
-                  Definitivamente volveré a comprar."
+                  "10 puntos super atentos su atencion. Lo recomendaria sin ninguna duda"
                 </p>
                 <div className="flex items-center">
                   <div className="w-10 h-10 bg-[#DBF6FF] rounded-full flex items-center justify-center mr-3">
-                    <span className="font-bold text-[#019FD5]">MR</span>
+                    <span className="font-bold text-[#019FD5]">JL</span>
                   </div>
                   <div>
-                    <p className="font-semibold text-[#093C8E]">Martín Rodríguez</p>
-                    <p className="text-sm text-[#03255C]">Taller Mecánico, Buenos Aires</p>
+                    <p className="font-semibold text-[#093C8E]">José L.</p>
+                    <p className="text-sm text-[#03255C]">Cliente verificado</p>
                     <p className="text-xs text-gray-500 mt-1">Reseña verificada de Google</p>
                   </div>
                 </div>
@@ -848,20 +845,18 @@ export default function Home() {
                       </svg>
                     </div>
                   </div>
-                  <span className="text-xs text-gray-500">hace 1 semana</span>
+                  <span className="text-xs text-gray-500">hace 11 meses</span>
                 </div>
                 <p className="text-[#03255C] mb-4 font-roboto">
-                  "Necesitaba un turbo urgente para mi camión y me ofrecieron una solución rápida y eficiente. El
-                  personal es muy amable y conocen muy bien su trabajo. El turbo funciona perfecto y el precio fue muy
-                  razonable. Los recomiendo sin dudarlo."
+                  "Muy amables y educados. Excelentes."
                 </p>
                 <div className="flex items-center">
                   <div className="w-10 h-10 bg-[#DBF6FF] rounded-full flex items-center justify-center mr-3">
-                    <span className="font-bold text-[#019FD5]">JP</span>
+                    <span className="font-bold text-[#019FD5]">AM</span>
                   </div>
                   <div>
-                    <p className="font-semibold text-[#093C8E]">Juan Pérez</p>
-                    <p className="text-sm text-[#03255C]">Transportista, Mendoza</p>
+                    <p className="font-semibold text-[#093C8E]">Ariel M.</p>
+                    <p className="text-sm text-[#03255C]">Cliente verificado</p>
                     <p className="text-xs text-gray-500 mt-1">Reseña verificada de Google</p>
                   </div>
                 </div>
@@ -875,7 +870,7 @@ export default function Home() {
           <div className="container">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#093C8E] font-oxanium">
-                Contáctanos
+                Contactanos
               </h2>
               <p className="mt-4 text-lg text-[#093C8E] max-w-3xl mx-auto font-roboto">
                 Estamos aquí para ayudarte. No dudes en comunicarte con nosotros para cualquier consulta o
@@ -983,7 +978,7 @@ export default function Home() {
                     <div>
                       <p className="text-sm font-semibold text-[#856404] font-roboto">Tip:</p>
                       <p className="text-sm text-[#856404] font-roboto">
-                        Podés adquirir nuestros productos las 24 horas a través de nuestra tienda en Mercado Libre
+                        Podés adquirir nuestros productos las 24 horas a través de nuestra tienda en <a href="https://www.mercadolibre.com.ar/pagina/cditurbos#from=share_eshop">Mercado Libre</a>
                       </p>
                     </div>
                   </div>
@@ -992,10 +987,10 @@ export default function Home() {
 
               {/* Síguenos en Redes */}
               <div className="bg-white p-8 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold mb-6 text-[#093C8E] font-oxanium">Síguenos en Redes</h3>
+                <h3 className="text-xl font-bold mb-6 text-[#093C8E] font-oxanium">Seginos en Redes</h3>
 
                 <p className="text-sm text-gray-600 font-roboto mb-6">
-                  Mantente al día con nuestras últimas novedades y promociones.
+                  Mantenete al día con nuestras últimas novedades y promociones.
                 </p>
 
                 <div className="space-y-4">
@@ -1071,7 +1066,7 @@ export default function Home() {
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                 </svg>
-                Escríbinos por WhatsApp
+                Escribinos por WhatsApp
               </a>
             </div>
           </div>
@@ -1211,11 +1206,11 @@ export default function Home() {
                   También en Mercado Libre
                 </h2>
                 <p className="text-lg text-[#093C8E] font-roboto mb-8 max-w-lg">
-                  Encuentra nuestros productos en nuestra tienda oficial de Mercado Libre. Envíos a todo el país y
+                  Encontrá nuestros productos en nuestra tienda oficial de Mercado Libre. Envíos a todo el país y
                   múltiples medios de pago.
                 </p>
                 <a
-                  href="https://www.mercadolibre.com.ar/"
+                  href="https://www.mercadolibre.com.ar/pagina/cditurbos#from=share_eshop"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center bg-[#093C8E] hover:bg-[#019FD5] text-white py-3 px-6 rounded-lg font-medium transition-colors gap-2"
@@ -1243,7 +1238,7 @@ export default function Home() {
               <div className="flex justify-center lg:justify-end">
                 <div className="w-full max-w-md h-64 bg-gray-200 rounded-lg flex items-center justify-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/400x400_meli.png?height=400&width=400"
                     alt="Productos CDI Turbos en Mercado Libre"
                     width={400}
                     height={300}
@@ -1292,7 +1287,7 @@ export default function Home() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#mercadolibre" className="text-sm hover:text-[#019FD5] transition-colors">
+                  <Link href="https://www.mercadolibre.com.ar/pagina/cditurbos#from=share_eshop" className="text-sm hover:text-[#019FD5] transition-colors">
                     Tienda
                   </Link>
                 </li>
@@ -1302,7 +1297,7 @@ export default function Home() {
             <div>
               <h3 className="text-lg font-semibold mb-4 text-white font-oxanium">Boletín Informativo</h3>
               <p className="text-sm text-white/80 font-roboto mb-4">
-                Suscríbete para recibir noticias y ofertas especiales.
+                Suscribite para recibir noticias y ofertas especiales.
               </p>
               <form className="flex flex-col gap-2">
                 <input type="email" placeholder="Tu email" className="px-3 py-2 rounded text-gray-900 text-sm" />
@@ -1316,12 +1311,12 @@ export default function Home() {
           <div className="border-t border-white/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-xs text-white/60 font-roboto">© 2025 CDI Turbos. Todos los derechos reservados.</p>
             <div className="flex gap-4 mt-4 md:mt-0">
-              <Link href="#" className="text-xs text-white/60 hover:text-[#019FD5] transition-colors font-roboto">
+              {/* <Link href="#" className="text-xs text-white/60 hover:text-[#019FD5] transition-colors font-roboto">
                 Política de Privacidad
               </Link>
               <Link href="#" className="text-xs text-white/60 hover:text-[#019FD5] transition-colors font-roboto">
                 Términos y Condiciones
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

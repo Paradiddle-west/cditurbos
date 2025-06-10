@@ -352,12 +352,12 @@ export default function BlogPage() {
               &copy; {new Date().getFullYear()} CDI Turbos. Todos los derechos reservados.
             </p>
             <div className="flex gap-4 mt-4 md:mt-0">
-              <Link href="#" className="text-xs text-[#DBF6FF] hover:text-[#019FD5] transition-colors font-roboto">
+              {/* <Link href="#" className="text-xs text-[#DBF6FF] hover:text-[#019FD5] transition-colors font-roboto">
                 Política de Privacidad
               </Link>
               <Link href="#" className="text-xs text-[#DBF6FF] hover:text-[#019FD5] transition-colors font-roboto">
                 Términos y Condiciones
-              </Link>
+              </Link> */}
             </div>
             <div className="flex gap-4 mt-4 md:mt-0">
               <Link
