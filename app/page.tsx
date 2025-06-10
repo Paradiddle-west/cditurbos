@@ -601,8 +601,7 @@ export default function Home() {
                         strokeLinejoin="round"
                         className="lucide lucide-star"
                       >
-                        <path d="M12 17.8 5.8 21 7 14.1 2 9.3l7-1L12 2" />
-                        <path d="M12 2v16" />
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                       </svg>
                     </div>
                   </div>
@@ -720,8 +719,7 @@ export default function Home() {
                         strokeLinejoin="round"
                         className="lucide lucide-star"
                       >
-                        <path d="M12 17.8 5.8 21 7 14.1 2 9.3l7-1L12 2" />
-                        <path d="M12 2v16" />
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                       </svg>
                     </div>
                   </div>
@@ -839,8 +837,7 @@ export default function Home() {
                         strokeLinejoin="round"
                         className="lucide lucide-star"
                       >
-                        <path d="M12 17.8 5.8 21 7 14.1 2 9.3l7-1L12 2" />
-                        <path d="M12 2v16" />
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                       </svg>
                     </div>
                   </div>
@@ -977,7 +974,7 @@ export default function Home() {
                     <div>
                       <p className="text-sm font-semibold text-[#856404] font-roboto">Tip:</p>
                       <p className="text-sm text-[#856404] font-roboto">
-                        Podés adquirir nuestros productos las 24 horas a través de nuestra tienda en <a href="https://www.mercadolibre.com.ar/pagina/cditurbos#from=share_eshop">Mercado Libre</a>
+                        Podés adquirir nuestros productos las 24 horas a través de nuestra tienda en <a target="_blank" href="https://www.mercadolibre.com.ar/pagina/cditurbos#from=share_eshop">Mercado Libre</a>
                       </p>
                     </div>
                   </div>
@@ -1286,7 +1283,7 @@ export default function Home() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://www.mercadolibre.com.ar/pagina/cditurbos#from=share_eshop" className="text-sm hover:text-[#019FD5] transition-colors">
+                  <Link target="_blank" href="https://www.mercadolibre.com.ar/pagina/cditurbos#from=share_eshop" className="text-sm hover:text-[#019FD5] transition-colors">
                     Tienda
                   </Link>
                 </li>
