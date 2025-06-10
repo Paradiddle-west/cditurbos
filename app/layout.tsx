@@ -1,9 +1,15 @@
 import type React from "react"
 import "@/app/globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import localFont from "next/font/local"
 import { Roboto } from "next/font/google"
-import Head from "next/head"
 
+// Cargar fuente Oxanium (tipografía de marca)
+const oxanium = localFont({
+  src: "../fonts/Oxanium-Regular.ttf",
+  variable: "--font-oxanium",
+  display: "swap",
+})
 
 // Cargar fuente Roboto (tipografía para contenido digital)
 const roboto = Roboto({
@@ -26,10 +32,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es" suppressHydrationWarning className={`${roboto.variable}`}>
-      <Head>
-        <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&display=swap" rel="stylesheet"/>
-      </Head>
+    <html lang="es" suppressHydrationWarning className={`${oxanium.variable} ${roboto.variable}`}>
       <body>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
