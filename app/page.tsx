@@ -414,7 +414,7 @@ export default function Home() {
                       fill="#EA4335"
                     />
                   </svg>
-                  <span className="font-semibold text-gray-800">Reseñas de Google</span>
+                  <span className="font-semibold text-gray-800">Opiniones de Google</span>
                 </div>
                 <div className="flex items-center gap-1">
                   <span className="text-lg font-bold text-gray-800">4.7</span>
@@ -485,13 +485,12 @@ export default function Home() {
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      className="lucide lucide-star-half"
+                      className="lucide lucide-star"
                     >
-                      <path d="M12 17.8 5.8 21 7 14.1 2 9.3l7-1L12 2" />
-                      <path d="M12 2v16" />
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                     </svg>
                   </div>
-                  <span className="text-sm text-gray-600">(87 reseñas)</span>
+                  <span className="text-sm text-gray-600">(66 Opiniones)</span>
                 </div>
                 <a
                   href="https://www.google.com/search?sca_esv=b97c0088c4eec1a1&rlz=1C1ONGR_enAR1149AR1149&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2Kzd-5cQXH65d2_WCVWDWiH_mnubDwySLwToS2wF709JE_gubOFMkC2pVs5qrweRceCdk60HyUX--n-q81c9q-DKwJz2Hz&q=CDITURBOS+Opiniones&sa=X&ved=2ahUKEwiDs9KPxrSNAxV9PrkGHahYJosQ0bkNegQIIRAE&biw=1396&bih=719&dpr=1.38"
@@ -499,7 +498,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="mt-2 text-sm text-blue-600 hover:text-blue-800 font-medium"
                 >
-                  Ver todas las reseñas en Google
+                  Ver todas las Opiniones en Google
                 </a>
               </div>
             </div>
