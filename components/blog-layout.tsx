@@ -168,14 +168,12 @@ export function BlogLayout({ children, title, category, date, breadcrumbs }: Blo
       </main>
 
       {/* Footer */}
-      <footer className="bg-[#03255C] text-gray-300 py-12">
+      <footer className="bg-[#093C8E] text-white py-12">
         <div className="container">
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-4">
             <div>
-              <div className="flex items-center gap-2 mb-4">
-                <Logo className="h-10 w-auto" color="white" />
-              </div>
-              <p className="text-sm text-[#DBF6FF] max-w-xs font-roboto">
+              <Logo className="h-12 w-auto mb-4" color="white" />
+              <p className="text-sm text-white/80 font-roboto">
                 Soluciones integrales para turbocompresores vehiculares. Venta, reparación y mantenimiento en toda
                 Argentina.
               </p>
@@ -184,130 +182,33 @@ export function BlogLayout({ children, title, category, date, breadcrumbs }: Blo
               <h3 className="text-lg font-semibold mb-4 text-white font-oxanium">Enlaces Rápidos</h3>
               <ul className="space-y-2 font-roboto">
                 <li>
-                  <Link href="/#inicio" className="text-sm hover:text-[#019FD5] transition-colors">
+                  <Link href="https://cditurbos.vercel.app/" className="text-sm hover:text-[#019FD5] transition-colors">
                     Inicio
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#servicios" className="text-sm hover:text-[#019FD5] transition-colors">
-                    Servicios
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#beneficios" className="text-sm hover:text-[#019FD5] transition-colors">
-                    Beneficios
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#testimonios" className="text-sm hover:text-[#019FD5] transition-colors">
-                    Testimonios
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#contacto" className="text-sm hover:text-[#019FD5] transition-colors">
-                    Contacto
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/blog" className="text-sm hover:text-[#019FD5] transition-colors">
-                    Blog
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#mercadolibre" className="text-sm hover:text-[#019FD5] transition-colors">
-                    Mercado Libre
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-4 text-white font-oxanium">Contacto</h3>
-              <ul className="space-y-2 font-roboto">
-                <li className="flex items-center gap-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-4 w-4 text-[#019FD5]"
-                  >
-                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                  </svg>
-                  <span>+54 9 11 5976-2237</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-4 w-4 text-[#019FD5]"
-                  >
-                    <rect width="20" height="16" x="2" y="4" rx="2" />
-                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                  </svg>
-                  <span>info@cditurbos.com</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-4 w-4 text-[#019FD5]"
-                  >
-                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-                    <circle cx="12" cy="10" r="3" />
-                  </svg>
-                  <span>Av. Gral. Tomás de Iriarte 2679, CABA</span>
-                </li>
-              </ul>
+              <h3 className="text-lg font-semibold mb-4 text-white font-oxanium">Boletín Informativo</h3>
+              <p className="text-sm text-white/80 font-roboto mb-4">
+                Suscribite para recibir noticias y ofertas especiales.
+              </p>
+              <form className="flex flex-col gap-2">
+                <input type="email" placeholder="Tu email" className="px-3 py-2 rounded text-gray-900 text-sm" />
+                <Button className="bg-[#E5262D] hover:bg-[#9C1318] text-white py-2 px-4 text-sm">Enviar</Button>
+              </form>
             </div>
+            <div className="md:col-span-1">{/* Espacio para mantener el grid */}</div>
           </div>
-          <div className="border-t border-[#062A63] mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-xs text-[#DBF6FF] font-roboto">
-              &copy; {new Date().getFullYear()} CDI Turbos. Todos los derechos reservados.
-            </p>
+          <div className="border-t border-white/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p className="text-xs text-white/60 font-roboto">© 2025 CDI Turbos. Todos los derechos reservados.</p>
             <div className="flex gap-4 mt-4 md:mt-0">
-              <Link href="#" className="text-xs text-[#DBF6FF] hover:text-[#019FD5] transition-colors font-roboto">
+              {/* <Link href="#" className="text-xs text-white/60 hover:text-[#019FD5] transition-colors font-roboto">
                 Política de Privacidad
               </Link>
-              <Link href="#" className="text-xs text-[#DBF6FF] hover:text-[#019FD5] transition-colors font-roboto">
+              <Link href="#" className="text-xs text-white/60 hover:text-[#019FD5] transition-colors font-roboto">
                 Términos y Condiciones
-              </Link>
-            </div>
-            <div className="flex gap-4 mt-4 md:mt-0">
-              <Link
-                href="https://www.instagram.com/cditurbos"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-[#093C8E] hover:bg-[#019FD5] rounded-full flex items-center justify-center transition-colors"
-              >
-                <Instagram className="h-5 w-5" />
-              </Link>
-              <Link
-                href="https://www.facebook.com/CDIturbocompresion"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-[#093C8E] hover:bg-[#019FD5] rounded-full flex items-center justify-center transition-colors"
-              >
-                <Facebook className="h-5 w-5" />
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
