@@ -10,7 +10,7 @@ const images = [
     alt: "Técnico especializado sosteniendo un turbocompresor",
   },
   {
-    src: "/turbo-selection-main.jpeg",
+    src: "/turbocompresor-mantenimiento.png",
     alt: "Selección de turbocompresores",
   },
   {
