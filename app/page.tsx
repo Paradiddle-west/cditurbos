@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Logo } from "@/components/logo"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { ScrollToTopButton } from "@/components/scroll-to-top-button"
+import { HeroCarousel } from "@/components/hero-carousel"
 
 export default function Home() {
   return (
@@ -67,16 +68,8 @@ export default function Home() {
           id="inicio"
           className="relative flex items-center min-h-[700px] py-20 md:py-32 overflow-hidden hero-bg"
         >
-          {/* Imagen de fondo con efecto parallax */}
-          <div className="absolute inset-0 z-0">
-            <Image
-              src="/turbo-hero.jpg"
-              alt="Técnico especializado sosteniendo un turbocompresor"
-              fill
-              className="object-cover object-center scale-110 transition-transform duration-[20s] ease-out hover:scale-105"
-              priority
-            />
-          </div>
+          {/* Carrusel de imágenes */}
+          <HeroCarousel />
 
           {/* Formas geométricas animadas */}
           <div className="geometric-shape shape-1"></div>
