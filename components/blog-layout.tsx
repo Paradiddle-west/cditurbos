@@ -106,33 +106,12 @@ export function BlogLayout({ children, title, category, date, breadcrumbs }: Blo
         <div className="container pb-16">
           <div className="max-w-3xl mx-auto prose prose-lg prose-blue">{children}</div>
         </div>
-
-        {/* Newsletter */}
-        {/* <section className="py-12 bg-[#093C8E] text-white">
-          <div className="container">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-2xl font-bold mb-4 font-oxanium">¿Te resultó útil este artículo?</h2>
-              <p className="mb-6 text-[#DBF6FF] font-roboto">
-                Suscríbete a nuestro boletín para recibir más contenido como este directamente en tu bandeja de entrada.
-              </p>
-              <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-                <input
-                  type="email"
-                  placeholder="Tu correo electrónico"
-                  className="px-4 py-2 rounded-md flex-1 text-gray-900"
-                  required
-                />
-                <Button className="bg-[#E5262D] hover:bg-[#9C1318]">Suscribirse</Button>
-              </form>
-            </div>
-          </div>
-        </section> */}
       </main>
 
       {/* Footer */}
       <footer className="bg-[#093C8E] text-white py-12">
         <div className="container">
-          <div className="grid gap-8 md:grid-cols-4">
+          <div className="grid gap-8 md:grid-cols-3">
             <div>
               <Logo className="h-12 w-auto mb-4" color="white" />
               <p className="text-sm text-white/80 font-roboto">
@@ -149,16 +128,6 @@ export function BlogLayout({ children, title, category, date, breadcrumbs }: Blo
                   </Link>
                 </li>
               </ul>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4 text-white font-oxanium">Boletín Informativo</h3>
-              <p className="text-sm text-white/80 font-roboto mb-4">
-                Suscribite para recibir noticias y ofertas especiales.
-              </p>
-              <form className="flex flex-col gap-2">
-                <input type="email" placeholder="Tu email" className="px-3 py-2 rounded text-gray-900 text-sm" />
-                <Button className="bg-[#E5262D] hover:bg-[#9C1318] text-white py-2 px-4 text-sm">Enviar</Button>
-              </form>
             </div>
             <div className="md:col-span-1">{/* Espacio para mantener el grid */}</div>
           </div>

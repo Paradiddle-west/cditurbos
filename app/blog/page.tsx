@@ -71,7 +71,7 @@ export default function BlogPage() {
         </div>
 
         {/* Artículos Destacados */}
-        <section className="py-12">
+        <section className="py-16">
           <div className="container">
             <h2 className="text-2xl font-bold mb-8 text-[#093C8E] font-oxanium">Artículos Destacados</h2>
 
@@ -112,38 +112,6 @@ export default function BlogPage() {
               <div className="bg-white rounded-lg overflow-hidden shadow-md transition-transform hover:shadow-lg hover:-translate-y-1">
                 <div className="relative h-48">
                   <Image
-                    src="/turbocompresor-mantenimiento.png"
-                    alt="5 señales de que tu turbo necesita mantenimiento"
-                    fill
-                    className="object-cover"
-                  />
-                  <div className="absolute top-4 left-4 bg-[#019FD5] text-white text-xs font-semibold px-2 py-1 rounded">
-                    Mantenimiento
-                  </div>
-                </div>
-                <div className="p-6">
-                  <p className="text-sm text-gray-500 mb-2 font-roboto">2 de Mayo, 2025</p>
-                  <h3 className="text-xl font-bold mb-3 text-[#093C8E] font-oxanium">
-                    5 señales de que tu turbo necesita mantenimiento
-                  </h3>
-                  <p className="text-[#03255C] mb-4 line-clamp-3 font-roboto">
-                    Detectar a tiempo los problemas en tu turbocompresor puede ahorrarte costosas reparaciones. Aprende
-                    a identificar las señales de advertencia más comunes que indican que tu turbo necesita atención.
-                  </p>
-                  <Link
-                    href="/blog/senales-mantenimiento-turbo"
-                    className="inline-flex items-center text-[#019FD5] hover:text-[#093C8E] font-medium"
-                  >
-                    Leer más
-                    <ChevronRight className="ml-1 h-4 w-4" />
-                  </Link>
-                </div>
-              </div>
-
-              {/* Artículo 3 */}
-              <div className="bg-white rounded-lg overflow-hidden shadow-md transition-transform hover:shadow-lg hover:-translate-y-1">
-                <div className="relative h-48">
-                  <Image
                     src="/turbocharger-comparison.png"
                     alt="Comparativa: Las mejores marcas de turbocompresores 2025"
                     fill
@@ -174,33 +142,12 @@ export default function BlogPage() {
             </div>
           </div>
         </section>
-
-        {/* Newsletter */}
-        {/* <section className="py-12 bg-[#093C8E] text-white">
-          <div className="container">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-2xl font-bold mb-4 font-oxanium">Suscríbete a nuestro boletín</h2>
-              <p className="mb-6 text-[#DBF6FF] font-roboto">
-                Recibe las últimas noticias, artículos y ofertas especiales directamente en tu bandeja de entrada.
-              </p>
-              <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-                <input
-                  type="email"
-                  placeholder="Tu correo electrónico"
-                  className="px-4 py-2 rounded-md flex-1 text-gray-900"
-                  required
-                />
-                <Button className="bg-[#E5262D] hover:bg-[#9C1318]">Suscribirse</Button>
-              </form>
-            </div>
-          </div>
-        </section> */}
       </main>
 
       {/* Footer */}
       <footer className="bg-[#093C8E] text-white py-12">
         <div className="container">
-          <div className="grid gap-8 md:grid-cols-4">
+          <div className="grid gap-8 md:grid-cols-3">
             <div>
               <Logo className="h-12 w-auto mb-4" color="white" />
               <p className="text-sm text-white/80 font-roboto">
@@ -217,16 +164,6 @@ export default function BlogPage() {
                   </Link>
                 </li>
               </ul>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4 text-white font-oxanium">Boletín Informativo</h3>
-              <p className="text-sm text-white/80 font-roboto mb-4">
-                Suscribite para recibir noticias y ofertas especiales.
-              </p>
-              <form className="flex flex-col gap-2">
-                <input type="email" placeholder="Tu email" className="px-3 py-2 rounded text-gray-900 text-sm" />
-                <Button className="bg-[#E5262D] hover:bg-[#9C1318] text-white py-2 px-4 text-sm">Enviar</Button>
-              </form>
             </div>
             <div className="md:col-span-1">{/* Espacio para mantener el grid */}</div>
           </div>

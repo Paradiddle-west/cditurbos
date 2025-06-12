@@ -1243,7 +1243,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-[#093C8E] text-white py-12">
         <div className="container">
-          <div className="grid gap-8 md:grid-cols-4">
+          <div className="grid gap-8 md:grid-cols-3">
             <div>
               <Logo className="h-12 w-auto mb-4" color="white" />
               <p className="text-sm text-white/80 font-roboto">
@@ -1281,17 +1281,6 @@ export default function Home() {
                   </Link>
                 </li>
               </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4 text-white font-oxanium">Boletín Informativo</h3>
-              <p className="text-sm text-white/80 font-roboto mb-4">
-                Suscribite para recibir noticias y ofertas especiales.
-              </p>
-              <form className="flex flex-col gap-2">
-                <input type="email" placeholder="Tu email" className="px-3 py-2 rounded text-gray-900 text-sm" />
-                <Button className="bg-[#E5262D] hover:bg-[#9C1318] text-white py-2 px-4 text-sm">Enviar</Button>
-              </form>
             </div>
 
             <div className="md:col-span-1">{/* Espacio para mantener el grid */}</div>
