@@ -6,8 +6,11 @@ import { Logo } from "@/components/logo"
 import { Instagram, Facebook } from "lucide-react"
 import { ScrollToTop } from "@/components/scroll-to-top"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { useState } from "react"
 
 export default function BlogPage() {
+  const [isOpen, setIsOpen] = useState(false)
+
   return (
     <div className="flex min-h-screen flex-col">
       <ScrollToTop />
@@ -24,7 +27,7 @@ export default function BlogPage() {
               Inicio
             </Link>
           </nav>
-          <Sheet>
+          <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="md:hidden">
                 <svg
@@ -47,7 +50,11 @@ export default function BlogPage() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <nav className="flex flex-col gap-4 mt-8">
-                <Link href="https://cditurbos.vercel.app/" className="text-lg font-medium hover:text-[#019FD5] transition-colors">
+                <Link 
+                  href="https://cditurbos.vercel.app/" 
+                  className="text-lg font-medium hover:text-[#019FD5] transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
                   Inicio
                 </Link>
               </nav>

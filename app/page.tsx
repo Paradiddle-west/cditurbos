@@ -7,8 +7,11 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { ScrollToTopButton } from "@/components/scroll-to-top-button"
 import { HeroCarousel } from "@/components/hero-carousel"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { useState } from "react"
 
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false)
+
   return (
     <div className="flex min-h-screen flex-col">
       {/* WhatsApp Button */}
@@ -42,7 +45,7 @@ export default function Home() {
               Tienda
             </Link>
           </nav>
-          <Sheet>
+          <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="md:hidden">
                 <svg
@@ -65,19 +68,39 @@ export default function Home() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <nav className="flex flex-col gap-4 mt-8">
-                <Link href="#inicio" className="text-lg font-medium hover:text-[#019FD5] transition-colors">
+                <Link 
+                  href="#inicio" 
+                  className="text-lg font-medium hover:text-[#019FD5] transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
                   Inicio
                 </Link>
-                <Link href="#servicios" className="text-lg font-medium hover:text-[#019FD5] transition-colors">
+                <Link 
+                  href="#servicios" 
+                  className="text-lg font-medium hover:text-[#019FD5] transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
                   Servicios
                 </Link>
-                <Link href="#beneficios" className="text-lg font-medium hover:text-[#019FD5] transition-colors">
+                <Link 
+                  href="#beneficios" 
+                  className="text-lg font-medium hover:text-[#019FD5] transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
                   Beneficios
                 </Link>
-                <Link href="#contacto" className="text-lg font-medium hover:text-[#019FD5] transition-colors">
+                <Link 
+                  href="#contacto" 
+                  className="text-lg font-medium hover:text-[#019FD5] transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
                   Contacto
                 </Link>
-                <Link href="#mercadolibre" className="text-lg font-medium hover:text-[#019FD5] transition-colors">
+                <Link 
+                  href="#mercadolibre" 
+                  className="text-lg font-medium hover:text-[#019FD5] transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
                   Tienda
                 </Link>
               </nav>
