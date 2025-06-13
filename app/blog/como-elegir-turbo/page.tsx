@@ -6,8 +6,8 @@ export default function ComoElegirTurboPage() {
   return (
     <BlogLayout
       title="Cómo elegir el turbo adecuado para tu vehículo"
-      category="Guía"
-      date="15 de Mayo, 2025"
+      // category="Guía"
+      // date="15 de Mayo, 2025"
       breadcrumbs={[
         {
           name: "Guías",

@@ -6,8 +6,8 @@ export default function SenalesMantenimientoTurboPage() {
   return (
     <BlogLayout
       title="5 señales de que tu turbo necesita mantenimiento"
-      category="Mantenimiento"
-      date="2 de Mayo, 2025"
+      // category="Mantenimiento"
+      // date="2 de Mayo, 2025"
       breadcrumbs={[
         {
           name: "Mantenimiento",
@@ -130,15 +130,6 @@ export default function SenalesMantenimientoTurboPage() {
         <li>En sistemas con refrigeración del turbo, podría indicar fugas internas</li>
       </ul>
 
-      <div className="relative w-full h-[300px] my-8 rounded-lg overflow-hidden">
-        <Image
-          src="/placeholder.svg?height=400&width=600&query=blue%20smoke%20from%20exhaust"
-          alt="Humo azul saliendo del escape, indicativo de problemas en el turbo"
-          fill
-          className="object-cover"
-        />
-      </div>
-
       <h3 className="text-xl font-bold text-[#093C8E] font-oxanium mt-6 mb-3">3. Ruidos anormales</h3>
 
       <p className="font-roboto">
@@ -246,15 +237,6 @@ export default function SenalesMantenimientoTurboPage() {
         Es importante no ignorar la luz de advertencia del motor. Utiliza un escáner OBD-II para leer los códigos de
         error o lleva tu vehículo a un taller especializado para un diagnóstico preciso.
       </p>
-
-      <div className="relative w-full h-[300px] my-8 rounded-lg overflow-hidden">
-        <Image
-          src="/placeholder.svg?height=400&width=600&query=check%20engine%20light%20dashboard"
-          alt="Luz de advertencia del motor en el tablero"
-          fill
-          className="object-cover"
-        />
-      </div>
 
       <h2 className="text-2xl font-bold text-[#093C8E] font-oxanium mt-8 mb-4">
         ¿Qué hacer si detectas estos síntomas?

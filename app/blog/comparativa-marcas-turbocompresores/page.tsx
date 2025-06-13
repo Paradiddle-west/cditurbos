@@ -5,8 +5,8 @@ export default function ComparativaMarcasTurbocompresoresPage() {
   return (
     <BlogLayout
       title="Turbos en Argentina: Un Vistazo a Jrone, ShengLong y Master Power"
-      category="Análisis"
-      date="20 de Abril, 2025"
+      // category="Análisis"
+      // date="26 de Mayo, 2025"
       breadcrumbs={[
         {
           name: "Análisis",
@@ -138,15 +138,6 @@ export default function ComparativaMarcasTurbocompresoresPage() {
         su reputación de <strong>durabilidad y desempeño confiable</strong> les ha permitido ganar terreno en mercados
         internacionales específicos, especialmente en aquellos donde las condiciones de uso son demandantes.
       </p>
-
-      <div className="relative w-full h-[300px] my-8 rounded-lg overflow-hidden">
-        <Image
-          src="/placeholder.svg?height=400&width=600&query=Master%20Power%20turbocharger%20high%20performance%20engine"
-          alt="Turbocompresor Master Power en motor de alto rendimiento"
-          fill
-          className="object-cover"
-        />
-      </div>
 
       <div className="bg-[#F0F7FF] p-6 rounded-lg my-8 border-l-4 border-[#019FD5]">
         <h3 className="text-lg font-bold text-[#093C8E] font-oxanium mb-2">Fortalezas de Master Power</h3>
