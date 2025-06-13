@@ -1230,6 +1230,91 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Blog Section */}
+        <section id="blog" className="py-16 bg-gray-50">
+          <div className="container">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#093C8E] font-oxanium">
+                Blog
+              </h2>
+              <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                Mantente al día con las últimas novedades, consejos y análisis del mundo de los turbos.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <Link href="/blog/como-elegir-turbo">
+                  <div className="relative h-48">
+                    <Image
+                      src="/blog/turbo-1.jpg"
+                      alt="Cómo elegir el turbo adecuado"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <div className="flex items-center gap-2 mb-4">
+                      <span className="px-3 py-1 text-xs font-semibold text-white rounded-full bg-[#E5262D]">
+                        Guía
+                      </span>
+                    </div>
+                    <h3 className="text-xl font-bold mb-2 text-[#093C8E]">Cómo elegir el turbo adecuado</h3>
+                    <p className="text-gray-500">
+                      Aprende los factores clave para seleccionar el turbo perfecto para tu vehículo.
+                    </p>
+                  </div>
+                </Link>
+              </div>
+              <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <Link href="/blog/mantenimiento-turbo">
+                  <div className="relative h-48">
+                    <Image
+                      src="/blog/turbo-2.jpg"
+                      alt="Mantenimiento preventivo"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <div className="flex items-center gap-2 mb-4">
+                      <span className="px-3 py-1 text-xs font-semibold text-white rounded-full bg-[#019FD5]">
+                        Mantenimiento
+                      </span>
+                    </div>
+                    <h3 className="text-xl font-bold mb-2 text-[#093C8E]">Mantenimiento preventivo</h3>
+                    <p className="text-gray-500">
+                      Guía completa para mantener tu turbo en óptimas condiciones.
+                    </p>
+                  </div>
+                </Link>
+              </div>
+              <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <Link href="/blog/analisis-turbo">
+                  <div className="relative h-48">
+                    <Image
+                      src="/blog/turbo-3.jpg"
+                      alt="Análisis de fallas comunes"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <div className="flex items-center gap-2 mb-4">
+                      <span className="px-3 py-1 text-xs font-semibold text-white rounded-full bg-[#093C8E]">
+                        Análisis
+                      </span>
+                    </div>
+                    <h3 className="text-xl font-bold mb-2 text-[#093C8E]">Análisis de fallas comunes</h3>
+                    <p className="text-gray-500">
+                      Identifica y soluciona los problemas más frecuentes en turbocompresores.
+                    </p>
+                  </div>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       {/* Footer */}

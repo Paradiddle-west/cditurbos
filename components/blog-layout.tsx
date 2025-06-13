@@ -58,7 +58,7 @@ export function BlogLayout({ children, title, category, date }: BlogLayoutProps)
         {/* Article Header */}
         <div className="container py-8">
           <div className="max-w-3xl mx-auto">
-            {/* <div className="mb-6">
+            <div className="mb-6">
               <span
                 className="inline-block px-3 py-1 text-xs font-semibold text-white rounded-full"
                 style={{
@@ -69,7 +69,7 @@ export function BlogLayout({ children, title, category, date }: BlogLayoutProps)
                 {category}
               </span>
               <p className="mt-2 text-sm text-gray-500">{date}</p>
-            </div> */}
+            </div>
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#093C8E] font-oxanium mb-8">
               {title}
             </h1>
