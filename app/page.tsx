@@ -1081,7 +1081,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <p className="text-sm text-gray-500 mb-2 font-roboto">15 de Mayo, 2025</p>
+                  {/* <p className="text-sm text-gray-500 mb-2 font-roboto">15 de Mayo, 2025</p> */}
                   <h3 className="text-lg font-bold mb-3 text-[#093C8E] font-oxanium">
                     Cómo elegir el turbo adecuado para tu vehículo
                   </h3>
@@ -1114,7 +1114,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <p className="text-sm text-gray-500 mb-2 font-roboto">2 de Mayo, 2025</p>
+                  {/* <p className="text-sm text-gray-500 mb-2 font-roboto">2 de Mayo, 2025</p> */}
                   <h3 className="text-lg font-bold mb-3 text-[#093C8E] font-oxanium">
                     5 señales de que tu turbo necesita mantenimiento
                   </h3>
@@ -1147,7 +1147,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <p className="text-sm text-gray-500 mb-2 font-roboto">20 de Abril, 2025</p>
+                  {/* <p className="text-sm text-gray-500 mb-2 font-roboto">20 de Abril, 2025</p> */}
                   <h3 className="text-lg font-bold mb-3 text-[#093C8E] font-oxanium">
                     Comparativa: Las mejores marcas de turbocompresores 2025
                   </h3>
