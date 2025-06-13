@@ -12,13 +12,9 @@ interface BlogLayoutProps {
   title: string
   category: string
   date: string
-  breadcrumbs: {
-    name: string
-    href: string
-  }[]
 }
 
-export function BlogLayout({ children, title, category, date, breadcrumbs }: BlogLayoutProps) {
+export function BlogLayout({ children, title, category, date }: BlogLayoutProps) {
   const menuLinks = [
     { href: "https://cditurbos.vercel.app/", label: "Inicio" },
   ]
@@ -54,18 +50,8 @@ export function BlogLayout({ children, title, category, date, breadcrumbs }: Blo
             <Link href="/blog" className="hover:text-[#019FD5]">
               Blog
             </Link>
-            {breadcrumbs.map((crumb, index) => (
-              <div key={index} className="flex items-center">
-                <ChevronRight className="h-4 w-4 mx-2" />
-                {index === breadcrumbs.length - 1 ? (
-                  <span className="text-[#093C8E] font-medium">{crumb.name}</span>
-                ) : (
-                  <Link href={crumb.href} className="hover:text-[#019FD5]">
-                    {crumb.name}
-                  </Link>
-                )}
-              </div>
-            ))}
+            <ChevronRight className="h-4 w-4 mx-2" />
+            <span className="text-[#093C8E] font-medium">{title}</span>
           </div>
         </div>
 
