@@ -6,11 +6,16 @@ import { Logo } from "@/components/logo"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { ScrollToTopButton } from "@/components/scroll-to-top-button"
 import { HeroCarousel } from "@/components/hero-carousel"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { useState } from "react"
+import { MobileMenu } from "@/components/mobile-menu"
 
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(false)
+  const menuLinks = [
+    { href: "#inicio", label: "Inicio" },
+    { href: "#servicios", label: "Servicios" },
+    { href: "#beneficios", label: "Beneficios" },
+    { href: "#contacto", label: "Contacto" },
+    { href: "#mercadolibre", label: "Tienda" },
+  ]
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -45,67 +50,7 @@ export default function Home() {
               Tienda
             </Link>
           </nav>
-          <Sheet open={isOpen} onOpenChange={setIsOpen}>
-            <SheetTrigger asChild>
-              <Button variant="outline" size="icon" className="md:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="h-4 w-4"
-                >
-                  <line x1="4" x2="20" y1="12" y2="12" />
-                  <line x1="4" x2="20" y1="6" y2="6" />
-                  <line x1="4" x2="20" y1="18" y2="18" />
-                </svg>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-              <nav className="flex flex-col gap-4 mt-8">
-                <Link 
-                  href="#inicio" 
-                  className="text-lg font-medium hover:text-[#019FD5] transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Inicio
-                </Link>
-                <Link 
-                  href="#servicios" 
-                  className="text-lg font-medium hover:text-[#019FD5] transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Servicios
-                </Link>
-                <Link 
-                  href="#beneficios" 
-                  className="text-lg font-medium hover:text-[#019FD5] transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Beneficios
-                </Link>
-                <Link 
-                  href="#contacto" 
-                  className="text-lg font-medium hover:text-[#019FD5] transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Contacto
-                </Link>
-                <Link 
-                  href="#mercadolibre" 
-                  className="text-lg font-medium hover:text-[#019FD5] transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Tienda
-                </Link>
-              </nav>
-            </SheetContent>
-          </Sheet>
+          <MobileMenu links={menuLinks} />
         </div>
       </header>
 
