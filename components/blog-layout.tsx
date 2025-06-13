@@ -5,8 +5,6 @@ import { Logo } from "@/components/logo"
 import { Button } from "@/components/ui/button"
 import { Facebook, Instagram } from "lucide-react"
 import { ScrollToTop } from "@/components/scroll-to-top"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { useState } from "react"
 import { MobileMenu } from "@/components/mobile-menu"
 
 interface BlogLayoutProps {
@@ -21,8 +19,6 @@ interface BlogLayoutProps {
 }
 
 export function BlogLayout({ children, title, category, date, breadcrumbs }: BlogLayoutProps) {
-  const [isOpen, setIsOpen] = useState(false)
-
   const menuLinks = [
     { href: "https://cditurbos.vercel.app/", label: "Inicio" },
   ]
