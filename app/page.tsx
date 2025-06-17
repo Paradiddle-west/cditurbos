@@ -1232,7 +1232,7 @@ export default function Home() {
         </section>
 
         {/* Blog Section */}
-        <section id="blog" className="py-16 bg-gray-50">
+        {/* <section id="blog" className="py-16 bg-gray-50">
           <div className="container">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#093C8E] font-oxanium">
@@ -1247,7 +1247,7 @@ export default function Home() {
                 <Link href="/blog/como-elegir-turbo">
                   <div className="relative h-48">
                     <Image
-                      src="/blog/turbo-1.jpg"
+                      src="/turbo-selection-main.jpeg"
                       alt="Cómo elegir el turbo adecuado"
                       fill
                       className="object-cover"
@@ -1314,7 +1314,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
 
       {/* Footer */}
