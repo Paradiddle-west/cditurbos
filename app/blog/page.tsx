@@ -9,7 +9,7 @@ import { MobileMenu } from "@/components/mobile-menu"
 
 export default function BlogPage() {
   const menuLinks = [
-    { href: "https://cditurbos.vercel.app/", label: "Inicio" },
+    { href: "https://www.cditurbos.com", label: "Inicio" },
   ]
 
   return (
@@ -24,7 +24,7 @@ export default function BlogPage() {
             </Link>
           </div>
           <nav className="hidden md:flex gap-6">
-            <Link href="https://cditurbos.vercel.app/" className="text-sm font-medium hover:text-[#019FD5] transition-colors">
+            <Link href="https://www.cditurbos.com" className="text-sm font-medium hover:text-[#019FD5] transition-colors">
               Inicio
             </Link>
           </nav>
@@ -145,7 +145,7 @@ export default function BlogPage() {
               <h3 className="text-lg font-semibold mb-4 text-white font-oxanium">Enlaces Rápidos</h3>
               <ul className="space-y-2 font-roboto">
                 <li>
-                  <Link href="https://cditurbos.vercel.app/" className="text-sm hover:text-[#019FD5] transition-colors">
+                  <Link href="https://www.cditurbos.com" className="text-sm hover:text-[#019FD5] transition-colors">
                     Inicio
                   </Link>
                 </li>
