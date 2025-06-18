@@ -125,6 +125,36 @@ export default function BlogPage() {
                   </Link>
                 </div>
               </div>
+
+              {/* Artículo 3: 5 señales de que tu turbo necesita mantenimiento */}
+              <div className="bg-white rounded-lg overflow-hidden shadow-md transition-transform hover:shadow-lg hover:-translate-y-1">
+                <div className="relative h-48">
+                  <Image
+                    src="/turbocompresor-mantenimiento.png"
+                    alt="5 señales de que tu turbo necesita mantenimiento"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute top-4 left-4 bg-[#019FD5] text-white text-xs font-semibold px-2 py-1 rounded">
+                    Mantenimiento
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-3 text-[#093C8E] font-oxanium">
+                    5 señales de que tu turbo necesita mantenimiento
+                  </h3>
+                  <p className="text-[#03255C] mb-4 line-clamp-3 font-roboto">
+                    Descubre las señales más comunes que indican que tu turbocompresor requiere atención. Evita daños mayores y costosas reparaciones identificando estos síntomas a tiempo.
+                  </p>
+                  <Link
+                    href="/blog/senales-mantenimiento-turbo"
+                    className="inline-flex items-center text-[#019FD5] hover:text-[#093C8E] font-medium"
+                  >
+                    Leer más
+                    <ChevronRight className="ml-1 h-4 w-4" />
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </section>
