@@ -123,7 +123,6 @@ export default function PoliticaPrivacidadPage() {
               </p>
               <ul className="list-disc pl-6 space-y-2 text-gray-700 font-roboto mb-6">
                 <li><strong>Email:</strong> info@cditurbos.com</li>
-                <li><strong>WhatsApp:</strong> +54 9 11 5976-2237</li>
                 <li><strong>Dirección:</strong> Av. Gral. Tomás de Iriarte 2679, CABA</li>
               </ul>
 
