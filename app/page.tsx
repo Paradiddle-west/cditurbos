@@ -7,8 +7,12 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { ScrollToTopButton } from "@/components/scroll-to-top-button"
 import { HeroCarousel } from "@/components/hero-carousel"
 import { MobileMenu } from "@/components/mobile-menu"
+import { useState } from "react"
+import React from "react"
 
 export default function Home() {
+  const [showPrivacy, setShowPrivacy] = useState(false)
+
   const menuLinks = [
     { href: "#inicio", label: "Inicio" },
     { href: "#servicios", label: "Servicios" },
@@ -1366,16 +1370,49 @@ export default function Home() {
           <div className="border-t border-white/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-xs text-white/60 font-roboto">© 2025 CDI Turbos. Todos los derechos reservados.</p>
             <div className="flex gap-4 mt-4 md:mt-0">
-              {/* <Link href="#" className="text-xs text-white/60 hover:text-[#019FD5] transition-colors font-roboto">
+              <button
+                type="button"
+                onClick={() => setShowPrivacy(true)}
+                className="text-xs text-white/60 hover:text-[#019FD5] transition-colors font-roboto"
+              >
                 Política de Privacidad
-              </Link>
-              <Link href="#" className="text-xs text-white/60 hover:text-[#019FD5] transition-colors font-roboto">
+              </button>
+              {/* <Link href="#" className="text-xs text-white/60 hover:text-[#019FD5] transition-colors font-roboto">
                 Términos y Condiciones
               </Link> */}
             </div>
           </div>
         </div>
       </footer>
+      {/* Modal de Política de Privacidad */}
+      {showPrivacy && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60">
+          <div className="bg-white rounded-lg shadow-lg max-w-lg w-full p-8 relative">
+            <button
+              onClick={() => setShowPrivacy(false)}
+              className="absolute top-2 right-2 text-gray-500 hover:text-[#019FD5] text-2xl font-bold"
+              aria-label="Cerrar"
+            >
+              ×
+            </button>
+            <h2 className="text-xl font-bold mb-4 text-[#093C8E] font-oxanium">Política de Privacidad</h2>
+            <div className="text-gray-700 text-sm font-roboto space-y-4 max-h-[60vh] overflow-y-auto">
+              <p>
+                En CDI Turbos nos comprometemos a proteger la privacidad de nuestros usuarios. Los datos personales recopilados a través de nuestros formularios o canales de contacto serán utilizados únicamente para responder consultas, gestionar pedidos y mejorar la experiencia del usuario.
+              </p>
+              <p>
+                No compartimos, vendemos ni cedemos información personal a terceros, salvo obligación legal. Utilizamos medidas de seguridad para proteger los datos almacenados.
+              </p>
+              <p>
+                El usuario puede solicitar la modificación o eliminación de sus datos personales en cualquier momento, contactándonos a través de los medios oficiales.
+              </p>
+              <p>
+                Al utilizar nuestro sitio, el usuario acepta esta política de privacidad. Nos reservamos el derecho de actualizarla, notificando los cambios en este mismo espacio.
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
