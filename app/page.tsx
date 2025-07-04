@@ -1398,16 +1398,57 @@ export default function Home() {
             <h2 className="text-xl font-bold mb-4 text-[#093C8E] font-oxanium">Política de Privacidad</h2>
             <div className="text-gray-700 text-sm font-roboto space-y-4 max-h-[60vh] overflow-y-auto">
               <p>
-                En CDI Turbos nos comprometemos a proteger la privacidad de nuestros usuarios. Los datos personales recopilados a través de nuestros formularios o canales de contacto serán utilizados únicamente para responder consultas, gestionar pedidos y mejorar la experiencia del usuario.
-              </p>
-              <p>
-                No compartimos, vendemos ni cedemos información personal a terceros, salvo obligación legal. Utilizamos medidas de seguridad para proteger los datos almacenados.
-              </p>
-              <p>
-                El usuario puede solicitar la modificación o eliminación de sus datos personales en cualquier momento, contactándonos a través de los medios oficiales.
-              </p>
-              <p>
-                Al utilizar nuestro sitio, el usuario acepta esta política de privacidad. Nos reservamos el derecho de actualizarla, notificando los cambios en este mismo espacio.
+              Política de Privacidad de CDITURBOS S.R.L.
+
+Última Actualización: 4 de Julio de 2025
+
+En CDITURBOS S.R.L., CUIT 30-71706991-5, valoramos su privacidad. Esta Política describe cómo manejamos su información personal al interactuar con nosotros, ya sea a través de nuestro sitio web, compras o servicios.
+
+1. Información que Recopilamos
+
+Recopilamos información necesaria para nuestras operaciones, incluyendo:
+
+Datos de Contacto e Identificación: Nombres, correos electrónicos, números de teléfono, DNI/CUIT y direcciones para envíos y facturación.
+
+Detalles de Transacción: Historial de compras y servicios, métodos de pago (sin almacenar datos completos de tarjetas, que son gestionados por pasarelas seguras).
+
+Datos de Uso Online: Información técnica como su IP, tipo de navegador, páginas visitadas y uso de cookies para mejorar su experiencia en nuestro sitio.
+
+2. ¿Cómo Recopilamos su Información?
+
+Obtenemos su información directamente cuando interactúa con nosotros (ej. compras, consultas) y automáticamente a través de herramientas web como cookies.
+
+3. ¿Para Qué Utilizamos su Información?
+
+Su información es usada para:
+
+Procesar pedidos y gestionar envíos.
+
+Proveer servicios de reparación y mantenimiento.
+
+Comunicarnos con usted (confirmaciones, soporte).
+
+Fines de marketing y promocionales, con su consentimiento o base legal.
+
+Mejorar la calidad de nuestros productos y servicios.
+
+Cumplir con nuestras obligaciones legales.
+
+4. ¿Con Quién Compartimos su Información?
+
+No vendemos ni alquilamos su información. Podemos compartirla con:
+
+Proveedores de Servicios: Empresas que nos ayudan en nuestras operaciones (ej. pagos, envíos, consultoría de marketing digital). Estos terceros solo acceden a lo estrictamente necesario y bajo confidencialidad.
+
+Requerimientos Legales: Cuando sea exigido por ley o para proteger nuestros derechos.
+
+5. Protección de la Información Personal
+
+CDITURBOS S.R.L. protege su información mediante medidas de seguridad técnicas como encriptación de datos, firewalls, software antivirus actualizado y sistemas de bases de datos seguros con controles de acceso estrictos.
+
+6. Sus Derechos
+
+Conforme a la Ley N° 25.326 de Argentina, usted tiene derecho a acceder, rectificar, suprimir u oponerse al procesamiento de su información. Para ejercer estos derechos, contáctenos.
               </p>
             </div>
           </div>
