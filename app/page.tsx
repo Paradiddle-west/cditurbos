@@ -9,18 +9,15 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { ScrollToTopButton } from "@/components/scroll-to-top-button"
 import { HeroCarousel } from "@/components/hero-carousel"
 import { MobileMenu } from "@/components/mobile-menu"
-import { useState } from "react"
-import React from "react"
 
 export default function Home() {
-  const [showPrivacy, setShowPrivacy] = useState(false)
-
   const menuLinks = [
     { href: "#inicio", label: "Inicio" },
     { href: "#servicios", label: "Servicios" },
     { href: "#beneficios", label: "Beneficios" },
+    { href: "#testimonios", label: "Testimonios" },
     { href: "#contacto", label: "Contacto" },
-    { href: "#mercadolibre", label: "Tienda" },
+    { href: "https://www.mercadolibre.com.ar/pagina/cditurbos#from=share_eshop", label: "Tienda" },
   ]
 
   return (
@@ -49,10 +46,13 @@ export default function Home() {
             <Link href="#beneficios" className="text-sm font-medium hover:text-[#019FD5] transition-colors">
               Beneficios
             </Link>
+            <Link href="#testimonios" className="text-sm font-medium hover:text-[#019FD5] transition-colors">
+              Testimonios
+            </Link>
             <Link href="#contacto" className="text-sm font-medium hover:text-[#019FD5] transition-colors">
               Contacto
             </Link>
-            <Link href="#mercadolibre" className="text-sm font-medium hover:text-[#019FD5] transition-colors">
+            <Link href="https://www.mercadolibre.com.ar/pagina/cditurbos#from=share_eshop" className="text-sm font-medium hover:text-[#019FD5] transition-colors">
               Tienda
             </Link>
           </nav>
@@ -1354,6 +1354,11 @@ export default function Home() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="#testimonios" className="text-sm hover:text-[#019FD5] transition-colors">
+                    Testimonios
+                  </Link>
+                </li>
+                <li>
                   <Link href="#contacto" className="text-sm hover:text-[#019FD5] transition-colors">
                     Contacto
                   </Link>
@@ -1372,13 +1377,9 @@ export default function Home() {
           <div className="border-t border-white/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-xs text-white/60 font-roboto">© 2025 CDI Turbos. Todos los derechos reservados.</p>
             <div className="flex gap-4 mt-4 md:mt-0">
-              <button
-                type="button"
-                onClick={() => setShowPrivacy(true)}
-                className="text-xs text-white/60 hover:text-[#019FD5] transition-colors font-roboto"
-              >
+              <Link href="/politica-privacidad" className="text-xs text-white/60 hover:text-[#019FD5] transition-colors font-roboto">
                 Política de Privacidad
-              </button>
+              </Link>
               {/* <Link href="#" className="text-xs text-white/60 hover:text-[#019FD5] transition-colors font-roboto">
                 Términos y Condiciones
               </Link> */}
@@ -1386,76 +1387,6 @@ export default function Home() {
           </div>
         </div>
       </footer>
-      {/* Modal de Política de Privacidad */}
-      {showPrivacy && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60">
-          <div className="bg-white rounded-lg shadow-lg max-w-lg w-full p-8 relative">
-            <button
-              onClick={() => setShowPrivacy(false)}
-              className="absolute top-2 right-2 text-gray-500 hover:text-[#019FD5] text-2xl font-bold"
-              aria-label="Cerrar"
-            >
-              ×
-            </button>
-            <h2 className="text-xl font-bold mb-4 text-[#093C8E] font-oxanium">Política de Privacidad</h2>
-            <div className="text-gray-700 text-sm font-roboto space-y-4 max-h-[60vh] overflow-y-auto">
-              <p>
-              Política de Privacidad de CDITURBOS S.R.L.
-
-Última Actualización: 4 de Julio de 2025
-
-En CDITURBOS S.R.L., CUIT 30-71706991-5, valoramos su privacidad. Esta Política describe cómo manejamos su información personal al interactuar con nosotros, ya sea a través de nuestro sitio web, compras o servicios.
-
-1. Información que Recopilamos
-
-Recopilamos información necesaria para nuestras operaciones, incluyendo:
-
-Datos de Contacto e Identificación: Nombres, correos electrónicos, números de teléfono, DNI/CUIT y direcciones para envíos y facturación.
-
-Detalles de Transacción: Historial de compras y servicios, métodos de pago (sin almacenar datos completos de tarjetas, que son gestionados por pasarelas seguras).
-
-Datos de Uso Online: Información técnica como su IP, tipo de navegador, páginas visitadas y uso de cookies para mejorar su experiencia en nuestro sitio.
-
-2. ¿Cómo Recopilamos su Información?
-
-Obtenemos su información directamente cuando interactúa con nosotros (ej. compras, consultas) y automáticamente a través de herramientas web como cookies.
-
-3. ¿Para Qué Utilizamos su Información?
-
-Su información es usada para:
-
-Procesar pedidos y gestionar envíos.
-
-Proveer servicios de reparación y mantenimiento.
-
-Comunicarnos con usted (confirmaciones, soporte).
-
-Fines de marketing y promocionales, con su consentimiento o base legal.
-
-Mejorar la calidad de nuestros productos y servicios.
-
-Cumplir con nuestras obligaciones legales.
-
-4. ¿Con Quién Compartimos su Información?
-
-No vendemos ni alquilamos su información. Podemos compartirla con:
-
-Proveedores de Servicios: Empresas que nos ayudan en nuestras operaciones (ej. pagos, envíos, consultoría de marketing digital). Estos terceros solo acceden a lo estrictamente necesario y bajo confidencialidad.
-
-Requerimientos Legales: Cuando sea exigido por ley o para proteger nuestros derechos.
-
-5. Protección de la Información Personal
-
-CDITURBOS S.R.L. protege su información mediante medidas de seguridad técnicas como encriptación de datos, firewalls, software antivirus actualizado y sistemas de bases de datos seguros con controles de acceso estrictos.
-
-6. Sus Derechos
-
-Conforme a la Ley N° 25.326 de Argentina, usted tiene derecho a acceder, rectificar, suprimir u oponerse al procesamiento de su información. Para ejercer estos derechos, contáctenos.
-              </p>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   )
 }
