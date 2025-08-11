@@ -199,8 +199,7 @@ export default function Home() {
                 Nuestros Servicios
               </h2>
               <p className="mt-4 text-lg text-[#03255C] max-w-3xl mx-auto font-roboto">
-                Ofrecemos soluciones completas para turbocompresores, desde la venta de equipos nuevos hasta
-                reparaciones profesionales.
+              Ofrecemos soluciones integrales como servicio técnico independiente para turbocompresores vehiculares. Venta, reparación y mantenimiento en toda Argentina.
               </p>
             </div>
             <div className="grid gap-8 md:grid-cols-3">
@@ -1330,8 +1329,7 @@ export default function Home() {
             <div>
               <Logo className="h-12 w-auto mb-4" color="white" />
               <p className="text-sm text-white/80 font-roboto">
-                Soluciones integrales para turbocompresores vehiculares. Venta, reparación y mantenimiento en toda
-                Argentina.
+              Ofrecemos soluciones integrales como servicio técnico independiente para turbocompresores vehiculares. Venta, reparación y mantenimiento en toda Argentina.
               </p>
             </div>
 
