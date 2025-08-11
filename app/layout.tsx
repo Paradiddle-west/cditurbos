@@ -2,6 +2,7 @@ import type React from "react"
 import "@/app/globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Roboto } from "next/font/google"
+import Script from "next/script"
 
 // Cargar fuente Roboto (tipografía para contenido digital)
 const roboto = Roboto({
@@ -35,9 +36,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" suppressHydrationWarning className={`${roboto.variable}`}>
-      <head>
+      <body>
         {/* Google Tag Manager */}
-        <script
+        <Script
+          id="gtm-script"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -49,8 +52,6 @@ export default function RootLayout({
           }}
         />
         {/* End Google Tag Manager */}
-      </head>
-      <body>
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
