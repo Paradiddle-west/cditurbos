@@ -973,7 +973,7 @@ export default function Home() {
 
               {/* Síguenos en Redes */}
               <div className="bg-white p-8 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold mb-6 text-[#093C8E] font-oxanium">Seginos en Redes</h3>
+                <h3 className="text-xl font-bold mb-6 text-[#093C8E] font-oxanium">Seguinos en Redes</h3>
 
                 <p className="text-sm text-gray-600 font-roboto mb-6">
                   Mantenete al día con nuestras últimas novedades y promociones.
